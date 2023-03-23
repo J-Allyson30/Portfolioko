@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/0bfbd2e999.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="Images/1x1 removed bg.png">
+    <title>My Portfolio</title>
+</head>
+<body> 
+    <!--<script src="./main.js"></script>-->
+    <div id="header"> 
+        <div class="container">
+           <button onclick="myFunction()" class="btn btn2"><i class="fa-solid fa-lightbulb"></i> Light mode</button>
+            <nav>
+                <img src="/Images/blue.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#hobby">Hobbies</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>An aspiring<br>UI/UX Designer </p>
+                <h1>Hello! I am <br><span id="title"></span></h1>
+            </div>
+        </div>
+    </div>
+    <!--ABOUT-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./Images/aboutpic.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub">About me</h1>
+                    <br><p>A 4th year student and an aspriring graduate of Technological University of the Philippines - Manila, taking a Bachelor's Degree in Computer Science.</p>
+                    <h2><em>Short introduction</em></h2>
+                    <ul id="intro"></ul>
+                    <!--<br><p>Name: Jean Allyson S. Junsay<br>Age: 22 years old<br>Birthday: March 30, 2000<br>Current year: 4th year BSCS student in TUP-Manila</p>-->
+                    <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')"><br>Education</p>
+                    <p class="tab-links" onclick="opentab('skills')"><br>Skills</p>
+                    
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>Tertiary School</span><br>BACHELOR OF SCIENCE IN COMPUTER SCIENCE <br>Technological University of the Philippines- Manila <br><i>Dean's Lister</i></li>
+                        <li><span>Senior High School</span><br>INFORMATION, COMMUNICATION AND TECHNOLOGY (ICT)<br> of Perpetual Help System - Molino Campus <br><i>Honorable mention</i></li>
+                        <li><span>Junior High School</span><br>Bacoor National Highschool<br><i>Honorable mention</i></li>
+                        <li><span>Primary School</span><br>Bayanan Elementary School</li>
+                    </ul>           
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Soft Skills</span><br>Organized <br>Good listener<br> Goal and result oriented<br> Initiative and communicates effectively <br> Empathetic<br> Always on time <br> Responsible</li>
+                        <li><span>Hard Skills</span><br>Graphic Design <br>Traditional Drawing<br> Fx make-up<br> Digital drawing<br>Crafts and DIY projects<br>Cycling</li>
+                    </ul>
+                </div>
+                </div><a href="#header" class="back btn"><span>Go back to top  ↑</span></a>
+            </div>  
+        </div>
+    </div>
+
+<!-- hobbies-->
+<div id="hobby">
+    <div class="container">
+        <h1 class="sub">Hobbies</h1>
+        <div class="hobbies-list">
+            <div>
+                <i class="fa-solid fa-pencil"></i>
+                <h2>Drawing</h2>
+                <p>Discovering different ways of how to draw to expand my knowledge and skills. Tried Traditional drawing, Digital drawing, Painting, and hoping to discover more ways.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-palette"></i>
+                <h2>FX Make-up</h2>
+                <p>Thinking and creating outside the box on how gory make-up effects will look and the process of creating it. Enjoying of what the end results will look.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-bicycle"></i>
+                <h2>Cycling</h2>
+                <p>When pandemic began, cycling took my interest. The satisfaction of cycling for miles, visiting different places, discovering things, and unwinding.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>Reading and Collecting novels</h2>
+                <p>The smell of the book, escaping from reality, and a cup of coffee. A trio that I wouldn't miss</p>
+            </div>
+        </div><a href="#header" class="back btn"><span>Go back to top  ↑</span></a>
+    </div>
+</div>
+
+<!--projects-->
+<div id="project">
+<div class="container">
+    <h1 class="sub">Projects</h1>
+    <div class="work-list">
+        <div class="work">
+            <img src="Images/QuintupLight-Brochure-0.jpg">
+            <div class="layer">
+                <h3>Quintuplight</h3>
+                <p>QuintupLight is an entertainment novelty device designed to bring back interactivity with modern games – at the same time improving one’s physical speed and reaction time. </p>
+                
+            </div>
+        </div>
+        <div class="work">
+            <img src="Images/Dashboard.jpg">
+            <div class="layer">
+                <h3>MRT 3 Ridership Forecast</h3>
+                <p>The project aims to analyze the patterns of daily ridership of commuters as well as the forecasted ridership for the next day for the whole year of 2020. </p>
+                
+            </div>
+        </div>
+        <div class="work">
+            <img src="Images/imus.png">
+            <div class="layer">
+                <h3>Simulation and Analysis of Imus Transport Plaza Terminal</h3>
+                <p>The project aims to show the queuing of the passengers and vehicle in the Imus Transport Plaza Terminal</p>
+               
+            </div>
+        </div>
+        <div class="work">
+            <img src="Images/Register2.png">
+            <div class="layer">
+                <h3>Web app: Integration of Blockchain Technology for Tracking and Tracing Supply chain.</h3>
+                <p>To ensure data security & privacy of supply chain, deployment of smart contracts which does not cost money, tracking and tracing of products in the supply chain.</p>
+                
+            </div>
+        </div>
+</div><a href="#header" class="back btn"><span>Go back to top  ↑</span></a>
+
+<!--Contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>jally2100@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>09663491232</p>
+            <div class="social-icons">
+                <a href="https://facebook.com/jjunsay32"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/JA-Junsay-xx"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="Images/Resume_JeanAllysonJunsay.pdf" download class="btn btn2">Download cv</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div><br><a href="#header" class="back btn"><span>Go back to top  ↑</span></a>
+    <!--footer-->
+    <!--<div class="copyright">
+        <p>Copyright @ Jean Allyson Junsay <i class="fa-regular fa-heart"></i></p>
+    </div>-->
+</div>
+
+
+<!--timestamp for this to explain is 35 mins-->
+<script src="./js/main.js"></script>
+</body>
+</html>
